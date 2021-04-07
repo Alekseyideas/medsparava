@@ -1,0 +1,49 @@
+.competition {
+  h1 {
+    text-align: center;
+  }
+
+  .steps__ui-blocks-wrapper {
+    margin-bottom: 100px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    & > div {
+      flex: 1;
+    }
+  }
+
+  .winnerPhotoText {
+    max-width: 420px;
+  }
+  .steps__ui-block {
+    height: 100px;
+    width: 100%;
+    background: rgba(161, 139, 84, 0.1);
+    span {
+      font-size: 30px;
+      padding: 40px 0;
+      color: #a18b54;
+      margin-left: -40px;
+    }
+  }
+
+  .winner-img {
+    max-width: 280px;
+  }
+
+  .blocksInnerWrapper {
+    display: flex;
+    // flex-direction: column;
+
+    & > div {
+      margin-right: 20px;
+    }
+  }
+
+  .winnerTextInfo {
+    p {
+      margin: 0;
+    }
+  }
+}

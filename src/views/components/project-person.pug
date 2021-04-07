@@ -1,0 +1,55 @@
+section.project-person.dp
+	.container
+		.project-person__wrapper
+			//- .project-person__image-form
+			//- 	.project-person__image-wrapper
+			//- 		.project-person__image(style="background-image: url('https://pbs.twimg.com/profile_images/874196000747003905/N8kxcjRw.jpg')")
+			//- 	form(action="").project-person__person-form
+			//- 		.form-group
+			//- 			label Ім’я:
+			//- 			input(value="Валентина" readOnly type="text")
+			//- 		.form-group
+			//- 			label Посада:
+			//- 			input(value="Медсестра" readOnly type="text")
+			//- 		.form-group
+			//- 			label Місце роботи:
+			//- 			input(value="Лікарня №132" readOnly type="text")
+			//- 		.form-group
+			//- 			label Стаж:
+			//- 			input(value="5 рокiв" readOnly type="text")
+			h2(style="margin-top: 0") Робота учасника конкурсу — оригінальна авторська розробка з питань забезпечення якості освітньої діяльності у закладі, опис практичного досвіду з підтвердженням показників результативності «було/стало»
+			form(action="").project-person__form-about
+				.form-group
+					label(for="projectName") Назва роботи: 
+					input(value="" required type="text" id="projectName" name="projectName")
+				.form-group#vp
+					span.label Висвітлені питання:
+					.radioWrapper
+						input(type="radio" id="clc" name="vp" value="цілісна внутрішня система забезпечення якості освітньої діяльності")
+						label(for="clc") цілісна внутрішня система забезпечення якості освітньої діяльності
+					.radioWrapper
+						input(type="radio" id="sozo" name="vp"  value="система оцінювання здобувачів освіти")
+						label(for="sozo") система оцінювання здобувачів освіти
+					.radioWrapper
+						input(type="radio" id="ocpdpp" name="vp" value="оцінювання педагогічної діяльності педагогічних працівників")
+						label(for="ocpdpp") оцінювання педагогічної діяльності педагогічних працівників
+					.radioWrapper
+						input(type="radio" id="30r" name="upzo" value="управлінські процеси закладу освіти")
+						label(for="upzo") управлінські процеси закладу освіти
+					.radioWrapper
+						input(type="radio" id="31r" name="vp" value="31 і більше років")
+						label(for="31r") 31 і більше років
+				.form-group
+					label(for="results") Коротко про результати (якісні і кількісні зміни):
+					input(value="" type="text" id="results" name="results")
+				.form-group.form-group--file
+					label(for="opis") Опис практики
+						| (word, pdf, exel, jpeg, pptx, rar):
+						span.req *
+					input(type="file" id="opis" name="opis" required data-text="Виберіть файл").jfilestyle
+				.form-group.form-group--file
+					label(for="dodatki") Додатки &nbsp
+						| (word, pdf, exel, jpeg, pptx, rar):
+					input(type="file" id="dodatki" name="dodatki" data-text="Виберіть файл").jfilestyle
+				.form-group.flex-row(style="margin: 40px 0")
+					button(type='submit').btn.btn-submit(style="min-width: 180px") Скачати сертифікат

@@ -1,0 +1,82 @@
+.concurs-steps {
+  .steps__ui-blocks-wrapper {
+    @include maxMd() {
+      flex-direction: column;
+    }
+
+    .waiting {
+      background: rgba(161, 139, 84, .1);
+
+      span {
+        color: #a18b54;
+      }
+    }
+
+    &>div {
+      clip-path: polygon(0% 0%, 95% 0, 100% 50%, 95% 100%, 0 100%, 4% 50%);
+      min-height: 172px;
+
+      &:nth-child(1) {
+        clip-path: polygon(92% 0, 100% 50%, 92% 100%, 0 100%, 0% 0);
+        max-width: 450px;
+
+        span {
+          @include minLg() {
+            font-size: 2.8rem;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        span {
+
+          font-size: 2rem;
+          font-weight: 500;
+          text-transform: none;
+        }
+
+        @include minLg() {
+          justify-content: flex-start;
+          padding-left: 40px;
+        }
+      }
+
+      @include minLg() {
+        justify-content: flex-start;
+        padding-left: 40px;
+      }
+
+    }
+  }
+
+  .steps__ui-block {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: initial;
+
+
+    @include maxMd() {
+      max-width: 340px;
+      height: 100px;
+    }
+
+    @include minLg() {
+      width: 70%;
+      min-height: 140px;
+      height: initial;
+
+    }
+  }
+
+  .section__title {
+    text-align: center;
+    color: #a18b54;
+    font-weight: 600;
+  }
+
+  .sub {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}

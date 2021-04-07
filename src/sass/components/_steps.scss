@@ -1,0 +1,48 @@
+.steps {
+  &__ui-blocks-wrapper {
+    display: flex;
+    align-items: center;
+    @include maxLg() {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__ui-blocks-wrapper {
+    margin-top: 40px;
+  }
+
+  &__ui-block {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 20px;
+    align-items: center;
+    width: 25%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.06);
+    clip-path: polygon(0% 0%, 91% 0, 100% 50%, 91% 100%, 0 100%, 9% 50%);
+
+    @include maxLg() {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+    @include maxSm() {
+      width: 100%;
+    }
+
+    span {
+      display: inline-flex;
+      max-width: 80%;
+      font-size: 1.5rem;
+      @include maxXl() {
+        font-size: 1.2rem;
+      }
+    }
+
+    &.active {
+      color: white;
+      background: color(accent2);
+    }
+  }
+}

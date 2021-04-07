@@ -1,0 +1,32 @@
+.ceremony {
+  &__video {
+    iframe {
+      width: 100% !important;
+      height: 500px !important;
+
+      @include maxSm() {
+        height: 200px !important;
+      }
+    }
+  }
+
+  &__btn {
+    margin: 30px auto;
+  }
+
+  &__slider {
+    width: 98%;
+    margin: auto;
+  }
+
+  &__slide {
+    &-inner {
+      min-height: 400px;
+      width: 95%;
+      margin: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

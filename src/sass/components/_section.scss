@@ -1,0 +1,26 @@
+.section {
+  &__title {
+    font-size: 3rem;
+    margin: 40px 0;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    font-size: 1.6rem;
+    line-height: 1.5em;
+
+    p {
+      margin: 20px 0 0;
+    }
+
+    a {
+      color: #00aaad;
+
+      &:hover {
+        color: #018688;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.table {
+  width: 100%;
+  margin-top: 40px;
+  border-spacing: 0;
+
+  th {
+    text-align: left;
+    background: #252525;
+    color: white;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-weight: 400;
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 20px 10px;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+      }
+
+      &:hover {
+        td {
+          background: rgba($color: #000000, $alpha: 0.03);
+        }
+      }
+    }
+  }
+}

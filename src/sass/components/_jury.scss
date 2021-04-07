@@ -1,0 +1,61 @@
+.jury {
+  margin-top: 50px;
+  background: url('../images/jury-bg.jpg') no-repeat center / cover;
+  padding: 40px 0;
+  color: white;
+
+  .section__title {
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__slider {
+    width: 100%;
+    margin: auto;
+  }
+
+  &__slide {
+    width: 90%;
+    // display: flex !important;
+    // align-items: center;
+    // min-height: 300px;
+    // justify-content: center;
+  }
+
+  &__slide-inner {
+    max-width: 700px;
+    margin: auto;
+    display: flex !important;
+    align-items: flex-start;
+    justify-content: center;
+
+    @include maxLg() {
+      flex-direction: column;
+    }
+  }
+
+  &__user-image {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__user-info {
+    padding-left: 40px;
+
+    @include maxLg() {
+      padding-left: 0;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+  }
+}

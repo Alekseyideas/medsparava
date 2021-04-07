@@ -1,0 +1,40 @@
+$startSize: 10px;
+
+// Font size
+$fontSize: 1.4rem;
+
+// Padding
+$padding: 15px;
+
+// Colors
+//--------------------
+$colors: (
+  accent: #00aaad,
+  accent2: #a18b54,
+  accentHover: #018688,
+  accentActive: #015557,
+  primary: #5a5a5a
+);
+
+@function color($colorSelect) {
+  @return map_get($colors, $colorSelect);
+}
+
+// Transition
+//--------------------
+$transition: 0.2s;
+
+// Corner radius
+//--------------------
+$radius: 4px;
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$font: $fontSize 'Open Sans', sans-serif;
+
+$defPad: 20px 0;
+
+$maxWidthContent: 1200px;

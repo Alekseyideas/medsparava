@@ -1,0 +1,25 @@
+.header {
+  background: #252525;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 10px 0;
+
+  &__logo {
+    max-width: 60px;
+    display: block;
+  }
+
+  &__tel {
+    color: white;
+    margin-right: 20px;
+    font-size: 2rem;
+
+    @include maxMd() {
+      font-size: 1em;
+      display: none;
+    }
+  }
+}

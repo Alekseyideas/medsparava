@@ -1,0 +1,192 @@
+section.questionnaire
+	.container
+		h1.section__title Заявку учасник 
+		form(action="project.html").questionnaire__form
+			.form-group
+				label(for="lastName") Прізвище 
+					span.req *
+				input(type="text" id="lastName" name="lastName" required)
+			.form-group
+				label(for="name") Ім’я
+					span.req *
+				input(type="text" id="name" name="name" required)
+			.form-group
+				label(for="surname") По батькові:
+					span.req *
+				input(type="text" id="surname" name="surname" required)
+			.form-group
+				label(for="position") Посада:
+					span.req *
+				input(type="text" id="position" name="position" required)
+			.form-group#stg
+				span.label Педагогічний стаж:
+					span.req *
+				.radioWrapper
+					input(type="radio" id="5r" name="stg" value="до 5 років")
+					label(for="5r") до 5 років
+				.radioWrapper
+					input(type="radio" id="10r" name="stg"  value="від 5 до 10 років")
+					label(for="10r") від 5 до 10 років
+				.radioWrapper
+					input(type="radio" id="20r" name="stg" value="від 11 до 20 років")
+					label(for="20r") від 11 до 20 років
+				.radioWrapper
+					input(type="radio" id="30r" name="stg" value="від 21 до 30 років")
+					label(for="30r") від 21 до 30 років
+				.radioWrapper
+					input(type="radio" id="31r" name="stg" value="31 і більше років")
+					label(for="31r") 31 і більше років
+	
+			.form-group#dStg
+				span.label Cтаж роботи на посаді директора:
+					span.req *
+				.radioWrapper
+					input(type="radio" id="1dr" name="dStg" value="до 1 рокy")
+					label(for="1dr") до 1 рокy
+				.radioWrapper
+					input(type="radio" id="5dr" name="dStg" value="від 1 до 5 років")
+					label(for="5dr") від 1 до 5 років
+				.radioWrapper
+					input(type="radio" id="10dr" name="dStg" value="від 6 до 10 років")
+					label(for="10dr") від 6 до 10 років
+				.radioWrapper
+					input(type="radio" id="20dr" name="dStg" value="від 11 до 20 років")
+					label(for="20dr") від 11 до 20 років
+				.radioWrapper
+					input(type="radio" id="21dr" name="dStg" value="21 і більше років")
+					label(for="21dr") 21 і більше років
+	
+			.form-group#ppz
+				span.label Кількість педагогічних працівників у закладі:
+					span.req *
+				.radioWrapper
+					input(type="radio" id="20ppz" name="ppz" value="до 20")
+					label(for="20ppz") до 20
+				.radioWrapper
+					input(type="radio" id="30ppz" name="ppz" value="від 21 до 30")
+					label(for="30ppz") від 21 до 30
+				.radioWrapper
+					input(type="radio" id="40ppz" name="ppz" value="від 31 до 40")
+					label(for="40ppz") від 31 до 40
+				.radioWrapper
+					input(type="radio" id="50ppz" name="ppz" value="від 41 до 50")
+					label(for="50ppz") від 41 до 50
+				.radioWrapper
+					input(type="radio" id="51ppz" name="ppz" value="51 і більше")
+					label(for="51ppz") 51 і більше
+
+				//- select(id="position" name="position" required)
+				//- 	option(value="0")
+				//- 	option(value="1") Головна медична сестра/брат
+				//- 	option(value="2") Заступник медичного директора з медсестринства
+				//- 	option(value="3") Старша медична сестра/брат
+				//- 	option(value="4") Медична сестра/брат
+				//- 	option(value="5") Інша
+			.form-group
+				label(for="obl") Область:
+					span.req *
+				select(id="obl" name="obl" required)
+					option(value="0")
+					option(value="1") Вінницька
+					option(value="2") Волинська
+					option(value="3") Дніпропетровська
+					option(value="4") Донецька
+					option(value="5") Житомирська
+					option(value="6") Закарпатська
+					option(value="7") Запорізька область
+					option(value="8") Івано-Франківська
+					option(value="9") Київська
+					option(value="10") Кіровоградська
+					option(value="10") Луганська
+					option(value="11") Луганська
+					option(value="11") Львівська
+					option(value="12") Миколаївська
+					option(value="13") Одеська
+					option(value="14") Полтавська
+					option(value="15") Рівненська
+					option(value="16") Сумська
+					option(value="17") Тернопільська
+					option(value="18") Харківська
+					option(value="19") Херсонська
+					option(value="20") Хмельницька
+					option(value="21") Черкаська
+					option(value="22") Чернівецька
+					option(value="23") Чернігівська
+					option(value="24") м. Київ
+			.form-group
+				label(for="zn") Назва закладу:
+					span.req *
+				input(type="text" id="zn" name="zn" required)
+			.form-group
+				label(for="adr") Адреса закладу:
+					span.req *
+				input(type="text" id="adr" name="adr" required)
+			.form-group#tpz
+				span.label Тип закладу (для ЗДО):
+					span.req *
+				.radioWrapper
+					input(type="radio" id="zg" name="tpz" value="загального")
+					label(for="zg") загального
+				.radioWrapper
+					input(type="radio" id="zgi" name="tpz" value="загального з інклюзивною (-ими) групою (-ами)")
+					label(for="zgi") загального з інклюзивною (-ими) групою (-ами)
+				.radioWrapper
+					input(type="radio" id="sp" name="tpz" value="спеціального")
+					label(for="sp") спеціального
+				.radioWrapper
+					input(type="radio" id="sn" name="tpz" value="санаторного")
+					label(for="sn") санаторного
+				.radioWrapper
+					input(type="radio" id="comb" name="tpz" value="комбінованого")
+					label(for="comb") комбінованого
+				.radioWrapper
+					input(type="radio" id="crd" name="tpz" value="центр розвитку дитини")
+					label(for="crd") центр розвитку дитини
+			.form-group#place
+				span.label Місцевість:
+					span.req *
+				.radioWrapper
+					input(type="radio" id="sl" name="place" value="сільська")
+					label(for="sl") сільська
+				.radioWrapper
+					input(type="radio" id="msk" name="place" value="міська")
+					label(for="msk") міська
+			.form-group#frm
+				span.label Форма власності:
+					span.req *
+				.radioWrapper
+					input(type="radio" id="cmnl" name="frm" value="комунальний")
+					label(for="cmnl") комунальний
+				.radioWrapper
+					input(type="radio" id="drg" name="frm" value="державний")
+					label(for="drg") державний
+				.radioWrapper
+					input(type="radio" id="prv" name="frm" value="приватний")
+					label(for="prv") приватний
+			.form-group
+				label(for="mob" )  Мобільний телефон
+					span.req *
+				input(type="text" required id="mob" name="mob")
+		
+			//- .form-group.form-group--file
+			//- 	label(for="photo") Ваше фото:
+			//- 	input(type="file" id="photo" name="photo" data-text="Виберіть файл").jfilestyle
+			.form-group.form-group--checkbox
+				label.checkbox
+					input(type='checkbox' required id="um" name="um")
+					.checkbox__text З умовами проведення Конкурсу ознайомлена(-ий).
+						span.req *
+			.form-group.form-group--checkbox
+				label.checkbox
+					input(type='checkbox' required id="personalData" name="personalData")
+					.checkbox__text Даю згоду на обробку персональних даних
+						span.req *
+				span(style="font-size:11px; padding: 10px 20px") Відповідно до Закону України «Про захист персональних даних» даю згоду на обробку моїх персональних даних із первинних джерел (ПІБ, місце роботи) та відомостей, які надаю про себе (номери телефонів, адреса електронної пошти), з метою забезпечення реалізації відносин у сфері освіти та підвищення кваліфікації,
+					| адміністративно-правових, податкових відносин та відносин у сфері бухгалтерського обліку
+			.form-group.form-group--checkbox
+				label.checkbox
+					input(type='checkbox' required id="dvd" name="dvd")
+					.checkbox__text З Даю згоду на поширення досвіду роботи.
+						span.req *
+			.form-group.flex-row
+				button(type='submit' id="btn-submit-questionnaire").btn.btn-submit Зберегти заявку

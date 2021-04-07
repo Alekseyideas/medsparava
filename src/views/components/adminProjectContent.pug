@@ -1,0 +1,57 @@
+sections.steps
+	.container
+		.steps__ui-blocks-wrapper
+			.steps__ui-block
+				span Усі конкурсні роботи
+			.steps__ui-block.active
+				span Перегляд роботи
+section.project-person.dp.adminProject
+	.container
+		.project-person__wrapper
+			.project-person__image-form
+				.project-person__image-wrapper
+					.project-person__image(style="background-image: url('https://pbs.twimg.com/profile_images/874196000747003905/N8kxcjRw.jpg')")
+				form(action="").project-person__person-form
+					.form-group
+						label Ім’я:
+						input(value="Валентина" readOnly type="text")
+					.form-group
+						label Посада:
+						input(value="Медсестра" readOnly type="text")
+					.form-group
+						label Назва роботи:
+						input(value="Лікарня №132" readOnly type="text")
+					.form-group
+						label Висвітлені питання: 
+						input(value="Lorem ipsum" readOnly type="text")
+					.form-group
+						label Коротко про результати (якісні і кількісні зміни): 
+						input(value="Lorem ipsum" readOnly type="text")
+			h2(style="margin-top: 40px") Опис проєкту
+			form(action="").project-person__form-about
+				.form-group
+					label(for="projectName") Назва: 
+					input(value="Lorem ipsum Dolor" readonly type="text" id="projectName" name="projectName")
+				.form-group
+					label(for="goal") Мета:
+					textarea(name="goal", id="goal", cols="30", rows="10" readOnly)
+						| Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt autem eveniet aspernatur debitis esse mollitia eaque eius culpa doloribus sequi iusto dolores deleniti dicta exercitationem sit rem, ullam et aut. 
+				//- .form-group
+				//- 	label(for="results") Результати:
+				//- 	input(value="Lorem ipsum dolor sit amet consectetur" readOnly type="text" id="results" name="results" )
+				.form-group.form-group--file
+					span Опис практики:
+					a(href="#") Назва_практики.pdf
+				.form-group.form-group--file
+					span Додатки:
+					a(href="#") dodatok_1.pdf
+				//- .form-group.form-group--file
+				//- 	span 
+				//- 	a(href="#") dodatok_1.zip
+				//- .form-group.form-group--file
+				//- 	span 
+				//- 	a(href="#") dodatok_1.exel
+				//- .form-group.form-group--file
+				//- 	span Додаткові матеріали:
+				//- 	a(href="#") Додаткові_Матеріали.zip
+

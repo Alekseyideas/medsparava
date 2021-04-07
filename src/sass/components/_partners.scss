@@ -1,0 +1,23 @@
+.partners {
+  padding-bottom: 40px;
+
+  img {
+    display: block;
+    margin: auto;
+  }
+
+  #med {
+    max-height: 40px;
+    width: auto;
+
+    @include maxMd {
+      margin-bottom: 50px;
+    }
+
+  }
+
+  #crm {
+    max-height: 140px;
+    width: auto;
+  }
+}
